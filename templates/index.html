@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+</head>
+<body>
+<h1>Favorite Colors</h1>
+{% for color in colors%}
+<h4>{{color}}</h4>
+{%if color == "Red"%}
+    <p>Red is the color of an Apple</p>
+{%endif%}
+{%endfor%}
+<p>This is an HTML rendered template from the Python3 Flask Module</p>
+<p>This website was created by {{name}}</p>
+
+</body>
+</html>
